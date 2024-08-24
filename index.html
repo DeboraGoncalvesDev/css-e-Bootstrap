@@ -15,6 +15,9 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
+        <div class="button-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
         <nav class="container">
             <ul class="menu">
                 <li>
@@ -138,35 +141,48 @@
         </main>
 
         <aside>
-            <section class="novidades">
-                <h2>Novidades</h2>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>
-                    
-                    
-                    </a>
-        
-                        
-                    
-                   
-
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>  <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>
-                    
-                    
-                    </a>
-                    
-                   
-
-                </article>
+            
+                <section class="novidade">
+                    <h2>Novidades</h2>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>
                 
+                
+                        </a>
+                
+                
+                
+                    </article>
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://via.placeholder.com/320x320">
+                            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>  <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi quia perspiciatis sequi, beatae voluptate fuga, animi ipsam deleniti  </h3>
+                
+                
+                        </a>
+                
+                
+                    </article>
+                
+            
         </aside>
     </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script >
+    $(document).ready(function(){
+        $('.button-menu button').click(
+            function(){
+                $('.menu').slideToggle();
+            }
+        )
+    })
+  </script>
     
 </body>
 </html>
